@@ -1,0 +1,87 @@
+body {
+    font-family: 'Handlee', cursive;
+    font-size: 13pt;
+    background-color: white;
+    padding: 10px;
+   
+}
+h1 {
+    font-size: 15pt;
+    color: Red
+    text-align: center;
+    padding: 18px 0 18px 0;
+    
+}
+h1 span {
+    border: 4px dashed Red;
+    padding: 10px;
+}
+
+.img-circle {
+    border: 3px black;
+    border-radius: 50%;
+}
+.section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    
+}
+#header {
+    background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+    background-size: cover;
+}
+#header img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+#header p {
+    font-size: 25pt;
+    color: yelloe;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+.quote {
+    font-size: 12pt;
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+progress {
+    width: 70%;
+    height: 20px;
+    
+}
+
+
+
+
+form {
+    text-align: center;
+    margin-top: 0;
+}
+
+
+textarea {
+    height: 100px;
+}
+input, textarea {
+    
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid black;
+    background-color: white;
+    
+   
+    width: 70%;
+    outline: none;
+}
