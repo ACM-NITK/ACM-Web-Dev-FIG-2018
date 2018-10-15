@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ 
+
+
+	<style> 
+    h1{
+    color: red;
+    }
+    body{
+    background-color: white;
+    }
+    h3{
+    	color: black;
+    }
+   .sub{
+    	color: gray;
+    }
+    
+    </style>
+</head>
+
+<title>my portfolio</title>
+<body>
+
+	<h1 align="center">MY PORTFOLIO
+	</h1>
+	
+
+	<div class="sub">
+		I'm Shreesha Bharadwaj
+        <br>
+        Born on 27 of april<br>
+        From Bengaluru, Karnataka
+    </div>
+    <h3>
+    Education
+    </h3>
+    <div class="sub">
+    Schooling from KLE Society's school
+    <br>
+    Currently doing Btech in NitK, Suratkal 
+    </div>
+    
+    <h3>Hobbies</h3>
+    <div class="sub">
+    Playing Badminton
+    <br>
+    Solving cubes
+    <br>
+    Foodie
+    
+    </div>
+    <h3>
+    Contact information
+    </h3>
+    <div class="sub">
+    Email:   bharadwajshreesha@gmail.com
+    Mobile number:  9740714752
+    
+</body>
+</html>
