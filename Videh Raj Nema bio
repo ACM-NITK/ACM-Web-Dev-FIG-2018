@@ -1,0 +1,31 @@
+<html>
+
+<head>
+
+<style>
+
+
+
+
+h1 {color:red}
+
+h2 {color:white}
+
+
+</style>
+<title>
+bio </title>
+</head>
+<body bgcolor="black">
+<center><b><font color="darkblue" size="10">BIO</b></font></center>
+<p><h1>NAME:</h1><h2> Videh Raj Nema</h2>
+<h1>COLLEGE AND BRANCH: </h1><h2>National Institute Of Technology Karnataka Surathkal CSE</h2>
+<h1>NATIVE STATE: </h1><h2>Madhya Pradesh</h2>
+<h1>ACHIEVEMENTS: </h1>
+<h2>JEE MAIN Rank- 1939
+ NTSE, KVPY Scholar</h2>
+<h1>HOBBIES:</h1><h2> Reading, Playing keyboard, painting, singing</h2>
+<h1>INTERESTED IN: </h1><h2>Algorithms, C programming, learning new things.....</h2>
+<h1>KNOWN LANGUAGES:</h1><h2>Hindi, English, French</h2>
+</body>
+</html>
