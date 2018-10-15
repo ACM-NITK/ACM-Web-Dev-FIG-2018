@@ -1,0 +1,19 @@
+<html>
+<head>
+<style>
+h1 {color:red}
+h2 {color:yellow}
+</style>
+<title>
+MY BIO
+</title>
+</head>
+<body bgcolor="black">
+<center><b><i><font color="white" size="15">ASSIGNMENT-01</b></i></font></center>
+<p><h1>NAME:</h1>
+<h2> SAGAR CHOUDHURY</h2>
+<h1>COLLEGE: </h1><h2>NITK,SURATHKAL</h2>
+<h1>NATIVE STATE: </h1><h2>ODISHA</h2>
+<h1>HOBBIES:</h1><h2> Reading, Basketball, Badminton, Swimming, Travelling</h2>
+</body>
+</html>
