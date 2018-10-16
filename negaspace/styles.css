@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.intro{
+  background: #030504;
+  color:#71C1B8;
+  font-family:verdana;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  background: #030504;
+  color: #DDD;
+}
+
+.container > section {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.profile-image {
+  background: url('https://drive.google.com/uc?id=1cDhT_c0w4hXdjxYu_ApJ_GdrLs287jAh') no-repeat bottom center;
+  background-size: 80%;
+}
+
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about {
+  max-width: 600px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 18px;
+}
+
+.list{
+  
+}
+
+.links {
+  margin-top: 45px;
+}
+
+.mail-link {
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
