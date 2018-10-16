@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>
+My Portfolio
+</title>
+</head>
+
+<body bgcolor="blue" text="yellow">
+<center> <h1> MY PORTFOLIO </h1> </center>
+<h3> name </h3>
+<i>
+My name is Shruti Masand
+</i>
+<br>
+<h3> college </h3>
+<i>
+I am studying in NITK, Surathkal, Mangalore.
+I had done my schooling from St. Xavier's Sr. Sec. School,Jaipur.
+</i>
+<br>
+<h3> hobbies </h3>
+<i>
+i love to participate in theater events. i love to sing and i am currenty working on my coding skills 
+which i also love. 
+</i>
+<br>
+<br>
+<hr size=4 width=75% color="cyan">
+</body>
+</html>
