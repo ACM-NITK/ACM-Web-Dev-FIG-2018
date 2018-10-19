@@ -1,0 +1,19 @@
+body
+{
+    background-image: url("wall.jpg");
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: 125%;
+    padding-left:6em;
+    padding-right:6em;
+}
+h1
+{
+    color: rgb(70, 61, 61);
+    font-family: fantasy;
+}
+b
+{
+    color: rgb(10, 8, 112);
+}
