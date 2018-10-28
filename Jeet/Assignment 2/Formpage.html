@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Form page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="Formpage.js"></script>
+</head>
+<body style="background-color: beige"> 
+    <h1 class="fontsty">Welcome to Form page.</h1>
+    <p>Here you type some text and it will be segregated into alphabets and numbers!</p>
+    <form>
+        <label for="userinput">Type some Text here</label>
+        <input type="text" id="userInput"><br>
+        <input type="button" value="submit" onclick="segregate()"><br>
+        <label for="alphabets">These are alphabets.</label><br>
+        <output id="alphabets"></output><br>
+        <label for="numbers">These are for numbers.</label><br>
+        <output id="numbers"></output><br>
+    </form>
+</body>
+</html>
