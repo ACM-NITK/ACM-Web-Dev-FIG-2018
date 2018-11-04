@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+<body>
+	<input type="text" id="userInput">give me input</input>
+	<button onclick="test()">Submit</button>
+	<p>
+	<iframe id="frame1" height="200" width="300"></iframe>
+	<iframe id="frame2" height="200" width="300"></iframe>
+	</p>
+	<script>
+		var ifrm1 = document.getElementById("frame1");
+		ifrm1 = ifrm1.contentWindow || ifrm1.contentDocument.document || ifrm1.contentDocument;
+		var ifrm2 = document.getElementById("frame2");
+		ifrm2 = ifrm2.contentWindow || ifrm2.contentDocument.document || ifrm2.contentDocument;
+        	function test()
+        	{
+			var letter = /^[a-zA-Z]+$/;
+			var number = /^[0-9]+$/;
+            		var userInput = document.getElementById("userInput").value;
+			var i;
+			ifrm1.document.open();
+			ifrm2.document.open();
+			for(i=0; i<userInput.length; i++){
+				if(userInput.charAt(i).match(letter)){
+					ifrm1.document.write(userInput.charAt(i)+" ");
+					
+				}else if(userInput.charAt(i).match(number)){
+					ifrm2.document.write(userInput.charAt(i)+" ");
+				}
+			}
+			ifrm1.document.close();
+			ifrm2.document.close();
+        	}
+    	</script>
+	</body>
+</html>
+

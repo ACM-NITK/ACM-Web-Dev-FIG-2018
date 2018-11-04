@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Assignment 2 Page 1</title>
+</head>
+<body>
+	<p>Random Text:(Please wait for 5 seconds) 
+  <div id="quote"style="visibility: hidden"></div>
+	</p>
+	<p>
+	<a href="assignment2part2.html">Next Page--></a>
+	</p>
+  <script>
+    (function hello() {
+      var quotes = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+      var quote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById("quote").innerHTML =
+        '<p>'+ quote + '</p>' ;
+	
+    })();
+	function showRedirect() {
+            document.getElementById("quote").style.visibility = "visible";
+        }
+        setTimeout("showRedirect()", 5000);
+  </script>
+</body>
+</html>
