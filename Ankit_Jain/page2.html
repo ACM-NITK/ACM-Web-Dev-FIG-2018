@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    input {
+      border: 2px solid black;background-color:#dddddd;
+      height:50px; font-size:20px; margin-left:100px;
+    }
+    div{ background-color:#dddddd ; border: 2px solid black;
+      width:300px; height:300px;font-size:20px; padding:5px; overflow:auto;}
+  </style>
+  <script>
+  function myFunc() {
+    var text1="", text2="",len1,len2,i;
+    var inp = document.getElementById("inpp").value;
+    var alph = inp.match(/[a-z]+/ig);
+    if (alph!=null) {
+      len1 = alph.length;
+      for (i=0;i<len1;i++) {
+        text1 = text1 + alph[i] + "<br>";
+      }
+    }
+    var num = inp.match(/[0-9]+/g);
+    if (num!=null) {
+      len2 = num.length;
+      for (i=0;i<len2;i++) {
+        text2 = text2 + num[i] + "<br>";
+      }
+    }
+    document.getElementById("disp1").innerHTML = text1;
+    document.getElementById("disp2").innerHTML = text2;
+  }
+  </script>
+</head>
+<body>
+  <h1>Input data in the box and click the submit button!</h1>
+  <input type="text" id="inpp">
+  <button onclick="myFunc();">Submit</button>
+  <br><br><br><br>
+  <span style="margin:210px;">Alphabets</span>
+  <span style="margin:130px;">Numbers</span><br>
+  <div style="float:left; margin-left:100px;" id="disp1"></div>
+  <div style=" margin-left:500px" id="disp2"></div>
+</body>
+</html>

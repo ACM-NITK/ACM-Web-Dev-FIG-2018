@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <style>
+    div { border: 2px solid black; width:550px;height:150px; padding: 25px;
+        background-color:#dddddd; font-size:20px;}
+    a { font-size:20px;}
+    </style>
+    <script>
+    function myFunc() {
+      var data= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      var len = Math.floor(Math.random()*50);
+      var i, text="";
+      for (i=0;i<len;i++) {
+        text = text + data[Math.floor(Math.random()*data.length)];
+      }
+      document.getElementById("rand").innerHTML = text;
+    }
+    </script>
+  </head>
+  <body onload=setTimeout("myFunc()",5000)>
+    <h1>Assignment 2 : Random text generation</h1>
+    <div id="rand"></div>
+    <br><br><br>
+    <a href="page2.html">Want more??</a>
+  </body>
+  </html>
