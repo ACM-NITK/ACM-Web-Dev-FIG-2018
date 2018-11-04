@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Keydown</title>
+        </head>
+        <body onkeydown='moveRectangle(event)'>
+                <h1>Welcome</h1>
+                <p>Press any key</p>
+                <canvas id="canvas-id" width="300" height="150">
+                </canvas>
+        <script type="text/javascript">
+                console.log("keydown.html loaded")
+                var c = document.getElementById("canvas-id");
+                var c_context = c.getContext("2d");
+                var x_var = 10;
+                var y_var = 5;
+                var rect_x = 0;
+                var rect_y = 0;
+                var rect_h = 30;
+                var rect_w = 60;
+                c_context.fillRect(rect_x, rect_y, rect_h, rect_w);
+                console.log("Initialized canvas");
+                function moveRectangle(event)
+                {
+                        e = event.keyCode;
+                        console.log("User has pressed " + e);
+                        c_context.clearRect(0, 0, 300, 150);
+                        if(e == 37)
+                                rect_x -= x_var;
+                        else if(e == 39)
+                                rect_x += x_var;
+                        else if(e == 38)
+                                rect_y -= y_var;
+                        else if(e == 40)
+                                rect_y += y_var;
+                        c_context.fillRect(rect_x, rect_y, rect_h, rect_w);
+                }
+        </script>
+        </body>
+</html>
