@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>
+            Movie tickets
+        </title>>
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <h1>Movie Ticket</h1>
+                <p>Select Seats</p>
+            </div>
+            <div ><small style="text-align-last: center">SCREEN HERE</small></div>
+            <div class="row">
+                <div class="col-sm-1"><button type="button" id="A1" class="btn btn-danger" onclick="book(this)">A1</button></div>
+                <div class="col-sm-1"><button type="button" id="A2" class="btn btn-default" onclick="book(this)">A2</button></div>
+                <div class="col-sm-1"><button type="button" id="A3" class="btn btn-default" onclick="book(this)">A3</button></div>
+                <div class="col-sm-1"><button type="button" id="A4" class="btn btn-default" onclick="book(this)">A4</button></div>
+                <div class="col-sm-1"><button type="button" id="A5" class="btn btn-default" onclick="book(this)">A5</button></div>
+                <div class="col-sm-1"><button type="button" id="A6" class="btn btn-default" onclick="book(this)">A6</button></div>
+                <div class="col-sm-1"><button type="button" id="A7" class="btn btn-danger" onclick="book(this)">A7</button></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"><button type="button" id="B1" class="btn btn-default" onclick="book(this)">B1</button></div>
+                <div class="col-sm-1"><button type="button" id="B2" class="btn btn-default" onclick="book(this)">B2</button></div>
+                <div class="col-sm-1"><button type="button" id="B3" class="btn btn-danger" onclick="book(this)">B3</button></div>
+                <div class="col-sm-1"><button type="button" id="B4" class="btn btn-danger" onclick="book(this)">B4</button></div>
+                <div class="col-sm-1"><button type="button" id="B5" class="btn btn-default" onclick="book(this)">B5</button></div>
+                <div class="col-sm-1"><button type="button" id="B6" class="btn btn-default" onclick="book(this)">B6</button></div>
+                <div class="col-sm-1"><button type="button" id="B7" class="btn btn-default" onclick="book(this)">B7</button></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"><button type="button" id="C1"class="btn btn-default" onclick="book(this)">C1</button></div>
+                <div class="col-sm-1"><button type="button" id="C2"class="btn btn-default" onclick="book(this)">C2</button></div>
+                <div class="col-sm-1"><button type="button" id="C3"class="btn btn-default" onclick="book(this)">C3</button></div>
+                <div class="col-sm-1"><button type="button" id="C4"class="btn btn-danger" onclick="book(this)">C4</button></div>
+                <div class="col-sm-1"><button type="button" id="C5"class="btn btn-default" onclick="book(this)">C5</button></div>
+                <div class="col-sm-1"><button type="button" id="C6"class="btn btn-default" onclick="book(this)">C6</button></div>
+                <div class="col-sm-1"><button type="button" id="C7"class="btn btn-default" onclick="book(this)">C7</button></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"><button type="button" id="D1" class="btn btn-default" onclick="book(this)">D1</button></div>
+                <div class="col-sm-1"><button type="button" id="D2" class="btn btn-default" onclick="book(this)">D2</button></div>
+                <div class="col-sm-1"><button type="button" id="D3" class="btn btn-default" onclick="book(this)">D3</button></div>
+                <div class="col-sm-1"><button type="button" id="D4" class="btn btn-default" onclick="book(this)">D4</button></div>
+                <div class="col-sm-1"><button type="button" id="D5" class="btn btn-default" onclick="book(this)">D5</button></div>
+                <div class="col-sm-1"><button type="button" id="D6" class="btn btn-danger" onclick="book(this)">D6</button></div>
+                <div class="col-sm-1"><button type="button" id="D7" class="btn btn-danger" onclick="book(this)">D7</button></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"><button type="button" id="E1" class="btn btn-default" onclick="book(this)">E1</button></div>
+                <div class="col-sm-1"><button type="button" id="E2" class="btn btn-default" onclick="book(this)">E2</button></div>
+                <div class="col-sm-1"><button type="button" id="E3" class="btn btn-default" onclick="book(this)">E3</button></div>
+                <div class="col-sm-1"><button type="button" id="E4" class="btn btn-danger" onclick="book(this)">E4</button></div>
+                <div class="col-sm-1"><button type="button" id="E5" class="btn btn-default" onclick="book(this)">E5</button></div>
+                <div class="col-sm-1"><button type="button" id="E6" class="btn btn-default" onclick="book(this)">E6</button></div>
+                <div class="col-sm-1"><button type="button" id="E7" class="btn btn-default" onclick="book(this)">E7</button></div>
+            </div> 
+            <div>
+                <form>
+                    <input type="button" value="SUBMIT" onclick="selectedSeats()">
+                    <label>Seats:</label>
+                    <output id="Seats"></output>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
