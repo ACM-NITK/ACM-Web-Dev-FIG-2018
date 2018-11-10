@@ -1,0 +1,22 @@
+#canvas
+{
+        width:"900";
+        height:"450";
+        border:1px solid #000000;
+}
+
+.button-group
+{
+        width:"100%";
+}
+
+.not-clicked
+{
+        width:10%;
+}
+
+.clicked
+{
+        width:10%;
+        background-color:red;
+}
