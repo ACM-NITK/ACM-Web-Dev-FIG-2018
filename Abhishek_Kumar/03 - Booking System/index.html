@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Booking System</title>
+                <link rel="stylesheet" href="css/basic.css">
+        </head>
+        <body>
+                <h1>Booking System</h1>
+                <h3>Movie Name: Scary movie</h3>
+                <h3>Timing: 12:00AM - 3 AM</h3>
+                <div id="button-container">
+                        <h3 align="center">Screen Here</h3>
+                </div>
+        </body>
+        <script type="text/javascript">
+                var num_rows = 5;
+                var num_cols = 10;
+                var div = document.getElementById("button-container");
+                function book(elem){
+                        console.log("Called by ", elem.id);
+                        elem.className = "clicked";
+                        elem.setAttribute('disabled', true);
+                }
+                for(i = 0; i < num_rows; i++)
+                {
+                        div.innerHTML += '<div class="button-group">';
+                        for(j = 0; j < num_cols; j++)
+                        {
+                                id = i*num_cols + (j + 1);
+                                btn = '<button type="button" id=' + id + 
+                                        ' class="not-clicked" onclick="book(this)"' 
+                                        + ">" + id + "</button>"
+                                div.innerHTML += btn;
+                        }
+                        div.innerHTML += '</div>';
+                        div.innerHTML += "<br><br>";
+                }
+        </script>
+        </body>
+</html>
