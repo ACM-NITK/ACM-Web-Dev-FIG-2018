@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  .selected{ background-color:red; box-shadow:  0 3px 6px;}
+  .disabled{ background-color:#666666 ;box-shadow:inset 0 4px 8px;}
+  button {border: 1px solid black; width:100px;height:100px;margin:10px;}
+  #seats{border: 1px solid black; width:980px; margin:10px;padding:30px;}
+  #ael{background-color:red;}
+  .small{height:50px;}
+  #screen{margin-left:500px;}
+  </style>
+  <script>
+  var booked=[0];
+  var n;
+  var count=0;
+  function Input()
+  {
+    n= document.getElementById("inp1").value;
+    for(i=0;i<=n;i++)
+    {
+      booked[i]=0;
+    }
+  }
+  function myFunc()
+  {
+    var temp= document.getElementById("inp2").value;
+    var already_booked=temp.split(',');
+    for(i=0;i<already_booked.length;i++)
+    {
+      booked[already_booked[i]]=2;
+    }
+    var text1="";
+    var i;
+    for(i=1;i<=n;i++)
+    {
+      if(booked[i]==2)
+        text1 = text1 + '<button class="disabled" id="'+i+'"onclick="book(this)";>'+i+"</button>";
+      else
+        text1 = text1 + '<button id="'+i+'" onclick="book(this)";>'+i+"</button>";
+    }
+    document.getElementById("seats").innerHTML = text1;
+  }
+
+
+  function book(elem)
+  {
+    var num = elem.id;
+    if (booked[num]==0)
+    {
+      booked[num]=1;
+      count++;
+      elem.setAttribute("class", "selected");
+    }
+    else if(booked[num]==1)
+    {
+      booked[num]=0;
+      count--;
+      elem.setAttribute("class", "unselected");
+    }
+  }
+  function final()
+  {
+    var flag=0;
+    var x='Seat Numbers Booked are: ';
+    for(i=1;i<=n;i++)
+    {
+      if(booked[i]==1)
+      {
+        if(!flag)
+        {
+          x+=i;
+          flag++;
+        }
+        else
+          x=x+', '+i;
+      }
+    }
+      document.getElementById("final").innerHTML=x;
+  }
+</script>
+
+</head>
+
+<body>
+  <h1>Seat Booking System</h1>
+  <h3>Enter total number of seats<h3>
+  <input type="number" id="inp1">
+  <button class="small">Submit</button>
+  <h3>Enter seats numbers that are already booked</h3>
+  <p>(separated by comma, without any space)</p>
+  <input type="string" id="inp2" onclick="Input();">
+  <button class="small" onclick="myFunc();">Submit</button>
+  <h3 id="screen">Screen Here</h3>
+  <div id="seats"></div>
+  <button class="small" onclick="final()">Book Seleted Seats</button>
+  </br>
+  <div id="final"></div>
+</body>
+
+</html>
