@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .selected{ background-color:green;}
+  .booked{ background-color:red ;}
+  button {border: 1px solid black; width:100px;height:100px;margin:10px; border-radius: 20%;}
+  #seats{border: 3px dotted blue; width:100%;}
+  .btn{height:40px; width:160px}
+  </style>
+  <title>
+  Movie Ticket Booking
+</title>
+</head>
+
+<body>
+<div class="container">
+  <div class="jumbotron">
+    <h1><center><u>Movie Ticket Booking</u></center></h1>
+  </div>
+  <p style="text-color:blue"><marquee><strong><u>NOW SHOWING:</u> <i>Zero</i> - - - <u>SHOW TIMINGS:</u> <i>9:00 AM , 12:30 PM , 4:00 PM , 7:30 PM , 11:00 PM</i></marquee></strong></p>
+  <h3>Enter the total number of seats:</h3>
+  <input type="number" id="inp1">
+  
+  <h3>Enter the seat numbers of already booked seats :</h3>
+  <h4><i>(space separated)</i></h4>
+  <input type="string" id="inp2" onclick="Input();"><br>
+  <button class="btn" onclick="booking();">Submit</button>
+  <p><b><center>SCREEN HERE</center></p></b>
+  <div id="seats"></div>
+  <button class="btn" onclick="display()">Book Seleted Seats</button>
+  </br>
+  <div class="jumbotron" id="display"></div>
+</div>
+</body>
+
+<script src="main.js">    
+</script>
+
+</html>
